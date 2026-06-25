@@ -9,7 +9,7 @@ class Solution:
         # Hint: subtract max(z) for numerical stability before computing exp
         # return np.round(your_answer, 4) 
 
-        numStability = math.e ** (z-max(z))
+        numStability = np.exp(z-max(z))
 
         sumJ = sum(numStability)
         
