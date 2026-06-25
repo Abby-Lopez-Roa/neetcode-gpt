@@ -15,5 +15,5 @@ class Solution:
         
         # return np.round(np.divide(numStability, sumJ), 4)
 
-        return np.round(np.divide(math.e ** (z-max(z)), sum(math.e ** (z[j] - max(z)) for j in range(len(z)))), 4)
+        return np.round((math.e ** (z-max(z)) / sum(math.e ** (z[j] - max(z)) for j in range(len(z)))), 4)
 
