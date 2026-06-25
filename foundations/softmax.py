@@ -13,7 +13,5 @@ class Solution:
 
         sumJ = 0
         for j in range(len(z)): sumJ += math.e ** ((z[j]) - max(z))
-
-        z = np.divide(numStability, sumJ)
         
-        return np.round(z, 4)
+        return np.round(np.divide(numStability, sumJ), 4)
