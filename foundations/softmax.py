@@ -13,4 +13,4 @@ class Solution:
 
         sumJ = np.sum(numStability)
         
-        return np.round(np.divide(numStability, sumJ), 4)
+        return np.round(numStability / sumJ, 4)
