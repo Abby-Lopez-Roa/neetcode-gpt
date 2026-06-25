@@ -9,11 +9,8 @@ class Solution:
         # Hint: subtract max(z) for numerical stability before computing exp
         # return np.round(your_answer, 4) 
 
-        # numStability = math.e ** (z-max(z))
+        numStability = math.e ** (z-max(z))
 
-        # sumJ = sum(math.e ** (z[j] - max(z)) for j in range(len(z)))
+        sumJ = sum(numStability)
         
-        # return np.round(np.divide(numStability, sumJ), 4)
-
-        return np.round((math.e ** (z-max(z)) / sum(math.e ** (z[j] - max(z)) for j in range(len(z)))), 4)
-
+        return np.round(np.divide(numStability, sumJ), 4)
